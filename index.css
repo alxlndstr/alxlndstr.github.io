@@ -56,10 +56,18 @@ h3, h2, h1 {
 }
 .project_title {
   font-size: 3vw;
+  color:white;
+  background-color:black;
 }
 .project_three {
+  color:white;
+  background-color:black;
   flex-direction: row;
   justify-content: space-evenly;
+}
+.project_three a {
+  font-size: 3vw;
+  color:white;
 }
 .project_three img{
   max-height: 75%;

@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi&display=swap');
+
+#mydiv {
+  position: fixed;
+  background-color: #F00;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  margin-left: -16px;
+  margin-top: -16px;
+  background-color: #DAF;
+  align-content: center;
+  justify-content: center;
+}
+#myp {
+  size: 32px 32px;
+  margin-top: 8px;
+  margin-left: 0px;
+}
+foreignObject {
+  position: fixed;
+  overflow-y: auto;
+}
+body {
+  padding: 0px;
+  overflow:hidden;
+  margin: 0px;
+}
+svg {
+  margin: none;
+  padding: none;
+  background-color:grey;
+  width: 100vw;
+  height: 100vh;
+  max-width:100%;
+  max-height:100%;
+}
+.p {
+  scale: 2000;
+  font-size:24px;
+}
+.contentEntry {
+  background-color: #FAD;
+  padding: 16px;
+  font-family: 'Yaldevi';
+}

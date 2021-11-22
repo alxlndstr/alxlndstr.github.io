@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&family=Yaldevi&display=swap');
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  background-color: #FFFFFF;
+  overflow: hidden;
+}
+.contentfulProject {
+  display: flex;
+  flex-wrap: wrap;
+}
+h3, h2, h1 {
+  color: '#000000';
+  font-family: 'Yaldevi';
+}
+.slide {
+  position:fixed;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border-bottom: 9px solid black;
+}
+.slideH1 {
+  font-size: 5vw;
+  margin:0px;
+}
+.slideH2 {
+  font-size: 4vw;
+  margin:0px;
+}
+.slideH3 {
+  font-size: 3vw;
+  margin:0px;
+}
+.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project_one, .project_two, .project_three, .project_title {
+  box-sizing: border-box;
+  border: 4px solid black;
+  padding: 16px;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.project_title {
+  font-size: 3vw;
+}
+.project_three {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.project_three img{
+  max-height: 75%;
+  max-width: 75%;
+}
+.project ul {
+  list-style:none;
+}
+.project li, .project p, .project a {
+  font-size: 1.5vw;
+  font-family: 'Urbanist';
+}
+.project_two li{
+  font-size: 3vw;
+
+}

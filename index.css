@@ -22,15 +22,15 @@ body {
 .hidden {
   display: none;
 }
-.mail {
-  font-size: 3vw;
+.link {
+  font-size: calc(3vw + 1vh);
   font-family: 'Urbanist';
   margin: 0px;
 }
 .navText {
   fill:gray;
   font-family: 'Urbanist';
-  font-size: 2vw;
+  font-size: 3vw;
   cursor: pointer;
 }
 .activeNav {

@@ -7,6 +7,35 @@ body {
   background-color: #FFFFFF;
   overflow: hidden;
 }
+.nav {
+  position: fixed;
+  left: 6px;
+  top: 32px;
+  z-index: 200;
+  opacity: 0.5;
+  padding: 6px;
+  background-color:white;
+  box-sizing: border-box;
+  border: 6px solid grey;
+  border-radius: 16px;
+}
+.hidden {
+  display: none;
+}
+.mail {
+  font-size: 3vw;
+  font-family: 'Urbanist';
+  margin: 0px;
+}
+.navText {
+  fill:gray;
+  font-family: 'Urbanist';
+  font-size: 2vw;
+  cursor: pointer;
+}
+.activeNav {
+  font-weight:bolder;
+}
 .contentfulProject {
   display: flex;
   flex-wrap: wrap;
@@ -56,18 +85,14 @@ h3, h2, h1 {
 }
 .project_title {
   font-size: 3vw;
-  color:white;
   background-color:black;
+  color:white
 }
 .project_three {
-  color:white;
   background-color:black;
+  color:white;
   flex-direction: row;
   justify-content: space-evenly;
-}
-.project_three a {
-  font-size: 3vw;
-  color:white;
 }
 .project_three img{
   max-height: 75%;
@@ -77,10 +102,9 @@ h3, h2, h1 {
   list-style:none;
 }
 .project li, .project p, .project a {
-  font-size: 1.5vw;
+  font-size: calc(0.95vw + 1vh);
   font-family: 'Urbanist';
 }
-.project_two li{
-  font-size: 3vw;
-
+.project_two li {
+  font-size: calc(3vw + 1vh);
 }

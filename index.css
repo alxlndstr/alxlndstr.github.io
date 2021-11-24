@@ -17,6 +17,7 @@ body {
   z-index: 200;
   opacity: 0.7;
   padding: 6px;
+  margin-left: -400px;
   background-color:white;
   box-sizing: border-box;
   border: 6px solid grey;
@@ -44,6 +45,7 @@ body {
 }
 .menuButton {
   position: fixed;
+  background-color: firebrick;
   z-index: 200;
   top: 0;
   left: 0;
@@ -150,4 +152,10 @@ h3, h2, h1 {
 .project_two {
   font-size: calc(3vw + 1vh);
   align-content: center;
+}
+.portrait {
+  width: calc(30vh + 30vw + 1vmin);
+  position: absolute; 
+  right: 150px;
+  bottom: 0px;
 }

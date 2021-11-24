@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist&family=Yaldevi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Yaldevi&display=swap');
 body {
   width: 100vw;
   height: 100vh;
@@ -7,12 +7,15 @@ body {
   background-color: #FFFFFF;
   overflow: hidden;
 }
+.scrollMethod {
+  justify-self: flex-end;
+}
 .nav {
   position: fixed;
   left: 6px;
-  top: 32px;
+  top: calc(4vh + 4vw);
   z-index: 200;
-  opacity: 0.5;
+  opacity: 0.7;
   padding: 6px;
   background-color:white;
   box-sizing: border-box;
@@ -24,14 +27,28 @@ body {
 }
 .link {
   font-size: calc(3vw + 1vh);
-  font-family: 'Urbanist';
+  font-family: 'Mukta';
   margin: 0px;
 }
 .navText {
   fill:gray;
-  font-family: 'Urbanist';
-  font-size: 3vw;
+  font-family: 'Mukta';
+  font-size: calc(2vw + 2vh);
   cursor: pointer;
+}
+.floatyImg {
+  pointer-events: none;
+  position: absolute;
+  width: 120%;
+  height: 120%;
+}
+.menuButton {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  width: calc(3vh + 3vw);
+  height: calc(3vh + 3vw);
 }
 .activeNav {
   font-weight:bolder;
@@ -43,9 +60,10 @@ body {
 h3, h2, h1 {
   color: '#000000';
   font-family: 'Yaldevi';
+  z-index: 150;
 }
 .slide {
-  position:fixed;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background: white;
@@ -55,18 +73,22 @@ h3, h2, h1 {
   justify-content: center;
   box-sizing: border-box;
   border-bottom: 9px solid black;
+  overflow: hidden;
 }
 .slideH1 {
   font-size: 5vw;
-  margin:0px;
+  margin: 0px;
+  z-index: 100;
 }
 .slideH2 {
   font-size: 4vw;
   margin:0px;
+  z-index: 100;
 }
 .slideH3 {
   font-size: 3vw;
   margin:0px;
+  z-index: 100;
 }
 .project {
   display: flex;
@@ -74,14 +96,16 @@ h3, h2, h1 {
 }
 .project_one, .project_two, .project_three, .project_title {
   box-sizing: border-box;
-  border: 4px solid black;
   padding: 16px;
   width: 50vw;
   height: 50vh;
   display: flex;
+  background-color:white;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  z-index: 40;
 }
 .project_title {
   font-size: 3vw;
@@ -99,12 +123,31 @@ h3, h2, h1 {
   max-width: 75%;
 }
 .project ul {
-  list-style:none;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  list-style: none;
 }
 .project li, .project p, .project a {
   font-size: calc(0.95vw + 1vh);
-  font-family: 'Urbanist';
+  font-family: 'Mukta';
 }
-.project_two li {
+.link {
+  font-weight: bolder;
+}
+#contact {
+  display: flex;
+  border-radius: 16px;
+  padding: 64px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DDDDDDAA;
+  z-index: 200;
+}
+.contact a {
+  color: black;
+}
+.project_two {
   font-size: calc(3vw + 1vh);
+  align-content: center;
 }

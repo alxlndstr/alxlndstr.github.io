@@ -13,22 +13,36 @@ body {
 .nav {
   position: fixed;
   left: 6px;
-  top: calc(4vh + 4vw);
+  top: calc(3vh + 3vw);
+  width: calc(10vh + 10vw);
   z-index: 200;
-  opacity: 0.7;
-  padding: 6px;
-  margin-left: -400px;
+  opacity: 0.8;
+  padding: 8px;
+  margin-left: -401px;
   background-color:white;
   box-sizing: border-box;
-  border: 6px solid grey;
-  border-radius: 16px;
+  border-right: 6px solid grey;
+
+}
+.accountLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.accountLink {
+  width: calc(3vh + 3vw);
+  height: calc(3vh + 3vw);
 }
 .hidden {
   display: none;
 }
 .link {
+  display: flex;
+  justify-content: center;
+  align-content:center;
   font-size: calc(3vw + 1vh);
   font-family: 'Mukta';
+  padding: 0px;
   margin: 0px;
 }
 .navText {
@@ -153,9 +167,21 @@ h3, h2, h1 {
   font-size: calc(3vw + 1vh);
   align-content: center;
 }
+.project_title h1 {
+  padding: 32px;
+  background-color: #99999999;
+  border-radius: 16px;
+}
 .portrait {
   width: calc(30vh + 30vw + 1vmin);
   position: absolute; 
   right: 150px;
   bottom: 0px;
+}
+.linkSymbol {
+  width: calc(3vh + 3vw);
+  transition: width 0.2s;
+}
+.linkSymbol:hover {
+  width: calc(4vh + 4vw);
 }
